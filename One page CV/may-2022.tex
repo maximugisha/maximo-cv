@@ -1,0 +1,396 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PlushCV - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (11/28/2021)
+%
+% Author:
+% Shubham Mazumder (http://mazumder.me)
+%
+% Hacked together from:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add more icon options 
+% 4. Fix hacky left alignment on contact line
+% 5. Remove Hacky fix for awkward extra vertical space
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Icons:
+%%Main: https://icons8.com/icons/carbon-copy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{plushcv}
+\setlength{\columnsep}{1cm}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+ 
+
+\usepackage{tikz}
+
+\usepackage{soul}
+
+\graphicspath{ {./icons/} }
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Maximo}{Mugisha}{Senior Software Engineer}
+
+\begin{multicols}{2}
+\color{BlueGreen}
+{\faHome} \quad
+{\href{https://www.maximo.ug}{ www.maximo.ug}} \\
+
+{\faMapMarker} \quad
+{Kampala, Uganda} \\
+
+{\faGithub} \quad
+{\href{https://www.github.com/maximugisha}{maximugisha}} \\
+
+{\faLinkedin} \quad
+{\href{https://www.linkedin.com/in/maximugisha}{maximugisha}} \\
+
+{\faEnvelope} \quad
+{\href{mailto:maximugisha@gmail.com} {maximugisha@gmail.com}} \\
+
+{\faWhatsapp} \quad
+{\href{tel:+256702431725}{+256702431725}} \\
+
+{\faPhone} \quad
+{\href{tel:+256775097505}{+256775097505}} \\
+\end{multicols}
+
+\vspace{\topsep}
+
+{Competent, forward-looking Computer and Software Engineer with 6+ years experience in creating and  innovating ideas into software solutions to enhance business productivity. Consistently recognized as a hands-on leader, skilled at project collaboration in cross-functional teams with a fast-paced, deadline-driven environment to steer timely project completion and within budgetary constraints.}
+\sectionsep
+\sectionsep
+
+% %%%%%%%%%%%%%%%%%%%% comment these lines out after reading it 
+% \hl{hey Max, this is a good start. Download this template as well for the longer CV version
+
+% https://www.overleaf.com/latex/templates/software-engineer-resume/gqxmqsvsbdjf. 
+
+% Just download the files and upload them to the folder longer version}
+
+% For this particular CV, 
+
+% \textbf{>>>>>}For the title, add relevant links. Since your website is a bit broken, its negative PR, don't add it now. First fix it. Add links that help your case (github, stackoverflow, linkedin? etc). Add one number and one email for address. I would advise you to build a small portfolio site with github.io that's a bit more sustainable and less likely to be hacked/compromised. Look at this website (\url{https://jacekjeznach.com/about}) when you see it you definitely know the guy is on point and he know his stuff. Build a website that supports the narrative you want to portray.
+
+% \textbf{>>>>}For the columns,  introduction of yourself should be on the top left (I am interested in web development and have worked with Ajax, etc... Something that summarizes the CV somewhat) -- no need to title that one, (e.g \url{https://novoresume.com/career-blog/software-engineer-resume})
+% On the top right, title (Education --- Add University and High-school. Don't add uni grades it might negatively sway someone since it's not first class) 
+% Second thing on left should be Work Experience. Mention the company and time you worked and small details or project highlights on the that job. 
+% On the right hand side below Education, add Awards. Mention any awards or honors you've received. 
+% On the left after Work Experience, Mention projects. One sentence description of what the project is about. If there is a link, Github or otherwise, add it. 
+% On the right after awards and honors, add Skills. 
+% On the left after Projects if there is space, add Service,. Here add the volunteering experiences you've been part of and what volunteering you did. 
+% On the right after Skills, add  miscellaneous. Under miscellaneous add any certifications you've earned and relevant organizations you're part of.
+% Lastly, across from left to right, add references. Start with Maximumus, the Yuichi and lastly Charled on the same row left to right.
+
+% \hl{you tend to use capital letters for your name and in emails. Using caps is interpreted as shouting. It's better to you First letter only caps for the name. }
+
+% %%%%%%%%%%%%%%%%%%%% comment these lines out after reading it 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Computer Medics Limited}
+\descript{|Software Developer}
+\location{May 2022 – Up-to-date | Rumee Towers, Nakasero, Kampala}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\begin{tightemize}
+\item Currently employed as full time Senior Back-end software developer in Python for different projects. 
+\item Also part of the DevOps team for different several projects.
+\end{tightemize}
+
+\sectionsep
+\sectionsep
+
+\runsubsection{Shopto Uganda Limited}
+\descript{|Senior Back-end Engineer}
+\location{April 2019 – June 2021 | Kampala, Uganda}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\begin{tightemize}
+\item Started as a Junior back-end developer in Ruby and Ruby on rails.
+\item Later Promoted to Senior back-end developer in Python and Django. \item Among the roles was developing a USSD application to use on phones that are not smartphones
+\end{tightemize}
+
+\sectionsep
+\sectionsep
+
+\runsubsection{Makerere University - ARMS Project}
+\descript{| Software Developer }
+\location{May 2016 – March 2018 | Makerere University, Kampala.}
+
+\begin{tightemize}
+\item Designed and implemented a Digital signage System at the college of engineering, Design, Art and technology that helps in information dissemination on the screens in the college, using Raspberry Pi technologies.
+\item Designed and implemented an MVP of an election/poll system to aid in student leadership elections at the same college.
+\item Website design and development.
+\end{tightemize}
+\sectionsep
+\sectionsep
+
+\runsubsection{Retirement Life Hub}
+\descript{C.T.O | Web Developer }
+\location{September 2019 – January 2022 | Kyanja, Kampala}
+
+\begin{tightemize}
+\item Chief Technology Officer – Always work hand in hand with the CEO in brainstorming and implementing strategies for the development of the company's Technology for better service delivery.
+\item Bulk email and social media management
+\end{tightemize}
+
+\sectionsep
+\sectionsep
+
+\runsubsection{ Free Lance Software Developer }
+\descript{| Python, Ruby, JavaScript }
+\location{Since 2016 | Kampala}
+
+\begin{tightemize}
+\item Since 2016, I have been working on freelance projects and solutions with different teams and companies, the latest being an auto irrigation and garden environment monitoring system
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}\label{sec:projects}
+
+\runsubsection{Judicial Service Commission Human Resource System}
+\descript{| Python / Django / React}
+\location{2022}
+
+\begin{tightemize}
+\item Developing the Back-end of the Human resource of the Judicial council of Uganda known as the Judicial Service commission
+\item Managing Databases, Hosting, and maintenance of the servers on which the system is hosted.
+\item DevOps lead on the entire project
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Irrigation App}
+\descript{| Python / Django}
+\location{2021}
+\begin{tightemize}
+\item This app helps monitor soil conditions like temperature and moisture and alerts users in case there is need to irrigate or add fertilizers.
+\item It incorporates AI that predicts chances of raining depending on \\ the environmental conditions
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Shopto Apps}
+\descript{| Ruby/ Ruby on Rails and Python/Django}
+\location{2019-2021}
+\begin{tightemize}
+\item Shopto App is an Inventory management system for shops. 
+\item Shopto delivery App is a system for making orders, purchase delivery for shop items especially to remote shops.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Farmgain App}
+\descript{|  Python/Django}
+\location{2020}
+\begin{tightemize}
+\item This is a system for connecting farmers to buyers in big markets all around Uganda  
+\item It eliminates the middle man effect of under pricing farmers.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Design Projects}
+\descript{|  Adobe Illustrator | Figma | Adobe XD | Adobe Photoshop}
+\location{SInce 2016}
+\begin{tightemize}
+ \item Worked on several designs for web, print and branding in the above software
+ \item Built UIs for different Mobile Apps and Web Apps
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Various Websites}
+\descript{| WordPress | Python | HTML and JavaScript}
+\begin{tightemize}
+\item I have designed, developed and maintained various number of websites that are still active and fully functional with total customer satisfaction.
+\end{tightemize}
+\sectionsep
+
+\section{Service | Voluntary Work}
+\begin{tightemize}
+\item I trained young innovators at an innovation camp in Soroti, sponsored by MIT-DLab when I was reached out to by Resilient Africa Network (RAN) in January 2019.
+\item I also volunteered to teach students from different schools on how to integrate technology with Agriculture at UCU Mukono, sponsored by RAN
+\item As an Africa code week implementing partner, I have since 2017 been volunteering to teach coding and problem-solving skills using technology to students from as young as 9. The project is sponsored by SAP, Irish Embassy, UNESCO and many more.
+\item I carried out a training to local farmers in Northern Uganda and the West-Nile, developed a system for them to help them catalogue their produce with the prices using smartphones. This has helped them eliminate the problem of middle-men unfair pricing of their produce. This project was sponsored by Action for Livelihood Enhancement in Northern Uganda (ALENU), Office of the prime minister, DINU,CARITAS, AFARD, GWED-G and European Union in October 2020.
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2020	     & Finalist & Lorem Ipsum\\
+% 2018	     & $2^{nd}$ & Dolor Sit Amet\\
+% 2015	     & Finalist  & Cras posuere\\
+% \\
+% \end{tabular}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \end{minipage} 
+\hfill
+% \begin{minipage}[t]{0.29\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Skills}
+
+\begin{multicols}{3}
+
+\subsection{Programming}
+Python \textbullet{} Ruby \textbullet{} JavaScript
+
+Android Development \\ Kotlin \textbullet{} Flutter
+\columnbreak
+
+\subsection{Libraries/Frameworks}
+{Node.js \textbullet{} Django \textbullet{}  React \textbullet{} MySQL \textbullet{} Postgres }
+
+\columnbreak
+
+\subsection{Tools/Platforms}
+A.W.S \textbullet{} Github \textbullet{} Docker \textbullet{} Heroku \textbullet{} GCP \textbullet{} Wordpress
+\end{multicols}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}\label{sec:education}
+\begin{multicols}{3}
+\subsection{Makerere University}\label{subsec:makerere-university}
+\descript{Bachelor's in Computer Engineering}
+\location{Sep 2015 - Jan 2020 | Kampala, Uganda}
+College of Engineering, Design, Art and Technology \\
+\sectionsep
+\sectionsep
+\columnbreak
+
+\subsection{Ntungamo High School}\label{subsec:ntungamo-high-school}
+\descript{Uganda Advanced Certificate of Education}
+\location{March 2013 - Dec 2014 | Ntungamo, Uganda}
+\sectionsep
+\sectionsep
+\columnbreak
+
+\subsection{Bishop Ogez High School}\label{subsec:bishop-ogez-high-school}
+\descript{ Uganda  Certificate of Education}
+\location{Feb 2009 - Nov 2012 | Bushenyi, Uganda}
+\sectionsep
+\end{multicols}
+
+\sectionsep
+\sectionsep
+\section{Awards / Honors}\label{sec:awards-/-honors}
+\begin{multicols}{3}
+\subsection{CodeIT Institute of Technology}\label{subsec:codeit-institute-of-technology}
+\descript{Certificate in Python, BlockChain and AWS}
+\location{Jan 2021 | The Innovation Village Kampala}
+\sectionsep
+\sectionsep
+\columnbreak
+
+\subsection{Africa code Week}\label{subsec:africa-code-week}
+\descript{Certificate for Training (others) programming Using Scratch}
+\location{Annually since 2017 }
+\sectionsep
+\sectionsep
+\columnbreak
+
+\subsection{MIT  | D-lab}\label{subsec:mit--|-d-lab}
+\descript{Certificate of collaboration to finding practical solutions to alleviate poverty}
+\location{January 2019}
+\sectionsep
+\end{multicols}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     REFERENCES
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{References}\label{sec:references}
+\begin{multicols}{3}
+\color{BlueGreen}
+\sectionsep
+{\textbf{Mr. Makumbi Richard }}, \\ C.E.O, Computer Medics Limited \\
+ \faEnvelope \quad makumbi@cml.ug \\ \faPhone \quad +256772377777
+\sectionsep
+\columnbreak
+
+{\textbf{Mr. Kennedy Nayebare}, \\ Project Manager, Computer Medics Limited} \\
+ \faEnvelope \quad knayebare@gmail.com \\ \faPhone \quad  +256779218440
+\sectionsep
+\columnbreak
+
+{\textbf{Dr. Charles Barugahare }}, \\ Former, University Secretary, Makerere \\
+ \faEnvelope \quad cbaruga1@gmail.com \\ \faPhone  \quad+256772457466 
+\end{multicols}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Coursework}
+
+% \subsection{Graduate}
+% Graduate Algorithms \textbullet{}\\ 
+% Advanced Computer Architecture \textbullet{}\\ 
+% Operating Systems \textbullet{}\\ 
+% Artificial Intelligence \textbullet{}\\
+% Visualization For Scientific Data \\
+% \sectionsep
+
+% \subsection{Undergraduate}
+
+% Database Management Systems \textbullet{}\\
+% Object Oriented Analysis and Design \textbullet{}\\
+% Artificial Intelligence and Expert Systems \textbullet{}\\
+% Scripting Languages and Web Tech \textbullet{}\\
+% Software Engineering \\
+
+% \end{minipage} 
+\end{document}  \documentclass[]{article.cls}
+
